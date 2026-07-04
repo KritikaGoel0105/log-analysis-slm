@@ -1,0 +1,2 @@
+{"window_id": 1, "logs": ["<TIMESTAMP> INFO User user_<USER_ID> logged in from <IP_ADDR>", "<TIMESTAMP> INFO Opened <FILE_PATH>", "<TIMESTAMP> INFO Memory pointer <MEM_ADDR> allocated", "<TIMESTAMP> INFO Connected to <IP_ADDR>:<PORT>", "<TIMESTAMP> INFO Session UUID <UUID>", "<TIMESTAMP> WARNING Disk usage high"]}
+{"window_id": 2, "logs": ["<TIMESTAMP> ERROR Connection timeout", "<TIMESTAMP> INFO User user <USER_ID> disconnected", "<TIMESTAMP> INFO Closed <FILE_PATH>", "<TIMESTAMP> INFO Shutdown complete"]}
