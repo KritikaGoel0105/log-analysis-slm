@@ -1,0 +1,16 @@
+venv/
+testenv/
+__pycache__/
+*.pyc
+
+models/
+offline_packages/
+
+.env
+
+.vscode/
+.git/
+
+*.log
+.DS_Store
+Thumbs.db

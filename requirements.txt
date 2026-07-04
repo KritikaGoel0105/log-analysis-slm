@@ -1,0 +1,14 @@
+torch
+torchvision
+torchaudio
+transformers
+datasets
+peft
+accelerate
+sentence-transformers
+faiss-cpu
+fastapi
+uvicorn
+streamlit
+sentencepiece
+tiktoken
