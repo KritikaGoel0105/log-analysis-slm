@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-07-17T08:39:01.044125+00:00",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "mode": "zero-shot baseline (unmodified SLM)",
+  "num_examples": 198,
+  "parse_failures": 16,
+  "parse_failure_rate": 0.08080808080808081,
+  "severity_accuracy": 0.4393939393939394,
+  "severity_f1_macro": {
+    "value": 0.3054179051422261,
+    "implementation": "sklearn"
+  },
+  "severity_classification_report": "              precision    recall  f1-score   support\n\n    CRITICAL       0.36      0.80      0.50         5\n        HIGH       0.83      0.21      0.34        47\n        INFO       0.82      0.63      0.71       100\n         LOW       0.11      0.08      0.09        26\n      MEDIUM       0.13      0.40      0.19        20\n UNPARSEABLE       0.00      0.00      0.00         0\n\n    accuracy                           0.44       198\n   macro avg       0.37      0.35      0.31       198\nweighted avg       0.65      0.44      0.48       198\n",
+  "severity_confusion_matrix": {
+    "INFO": {
+      "INFO": 63,
+      "MEDIUM": 29,
+      "LOW": 8
+    },
+    "HIGH": {
+      "LOW": 4,
+      "MEDIUM": 15,
+      "HIGH": 10,
+      "CRITICAL": 5,
+      "UNPARSEABLE": 5,
+      "INFO": 8
+    },
+    "LOW": {
+      "UNPARSEABLE": 9,
+      "MEDIUM": 11,
+      "INFO": 2,
+      "CRITICAL": 2,
+      "LOW": 2
+    },
+    "MEDIUM": {
+      "MEDIUM": 8,
+      "UNPARSEABLE": 2,
+      "HIGH": 1,
+      "LOW": 5,
+      "INFO": 4
+    },
+    "CRITICAL": {
+      "CRITICAL": 4,
+      "HIGH": 1
+    }
+  },
+  "incident_type_f1_macro": {
+    "value": 0.000899685110211426,
+    "implementation": "sklearn"
+  },
+  "rouge_l": {
+    "mean": 0.12070759813518747,
+    "implementation": "rouge_score"
+  },
+  "false_positive_rate": {
+    "rate": 0.3333333333333333,
+    "false_positives": 42,
+    "non_incident_total": 126
+  },
+  "latency": {
+    "mean": 92.61198989898993,
+    "p50": 80.993,
+    "p95": 216.221,
+    "max": 326.782
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "targets": {
+    "severity_accuracy": {
+      "target": 0.85,
+      "direction": ">"
+    },
+    "incident_type_f1_macro": {
+      "target": 0.8,
+      "direction": ">"
+    },
+    "rouge_l_mean": {
+      "target": 0.55,
+      "direction": ">"
+    },
+    "false_positive_rate": {
+      "target": 0.1,
+      "direction": "<"
+    }
+  }
+}
