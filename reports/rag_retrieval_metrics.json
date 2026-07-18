@@ -1,0 +1,4770 @@
+{
+  "summary": {
+    "generated_at": "2026-07-18T12:38:54.194590+00:00",
+    "num_test_queries": 198,
+    "top_k": 3,
+    "relevance_criterion": "retrieved.incident_type == reference.incident_type (strict; see module docstring)",
+    "retrieval_precision_at_3": 0.8198653198653193,
+    "severity_precision_at_3_secondary": 0.8569023569023564,
+    "queries_with_perfect_p3": 134,
+    "queries_with_zero_p3": 11,
+    "target": 0.7,
+    "target_met": true,
+    "index_file": "data\\faiss.index",
+    "embedding_model": "all-MiniLM-L6-v2 (local, offline)"
+  },
+  "per_query": [
+    {
+      "index": 0,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1033
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 579
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1316
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 1,
+      "reference_incident_type": "Repeated Authentication Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 1156
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1089
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 65
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 2,
+      "reference_incident_type": "HDFS Block Transfer Operation",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 906
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 1335
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 893
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 3,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 160
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1519
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 482
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 4,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 394
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 219
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 519
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 5,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 880
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 662
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 867
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 6,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 252
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 524
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 621
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 7,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 542
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1251
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 299
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 8,
+      "reference_incident_type": "Windows System Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1412
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 329
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1154
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 9,
+      "reference_incident_type": "HDFS Block Transfer Operation",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 831
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 1483
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 5
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 10,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 284
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1122
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 841
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 11,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 836
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 624
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 778
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 12,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 533
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 172
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 26
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 13,
+      "reference_incident_type": "Hadoop Cluster Health Warning",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 1285
+        },
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 1118
+        },
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 4
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 14,
+      "reference_incident_type": "Service Error Event",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 433
+        },
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 1187
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 171
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 15,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1549
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 740
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 563
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 16,
+      "reference_incident_type": "Service Configuration Error",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Service Configuration Error",
+          "severity": "HIGH",
+          "train_index": 915
+        },
+        {
+          "incident_type": "Service Connection Refused",
+          "severity": "HIGH",
+          "train_index": 946
+        },
+        {
+          "incident_type": "DNS Resolution Failure",
+          "severity": "HIGH",
+          "train_index": 1436
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 17,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1460
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 106
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 618
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 18,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 728
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1121
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1065
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 19,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 907
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1449
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 522
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 20,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1438
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1259
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1094
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 21,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 681
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 989
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1243
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 22,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 814
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 705
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 617
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 23,
+      "reference_incident_type": "Windows System Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 710
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 683
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 89
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 24,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1444
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1196
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 637
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 25,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1330
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 1141
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1247
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 26,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 1400
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 1516
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 1221
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 27,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 981
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 800
+        },
+        {
+          "incident_type": "MapReduce Task Execution",
+          "severity": "INFO",
+          "train_index": 1268
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 28,
+      "reference_incident_type": "HDFS Block Transfer Operation",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 274
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 727
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 565
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 29,
+      "reference_incident_type": "Multiple Error Events",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 875
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 927
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 601
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 30,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 246
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 164
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 463
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 31,
+      "reference_incident_type": "macOS System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 802
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 1255
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 149
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 32,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 1201
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 590
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 1006
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 0.0
+    },
+    {
+      "index": 33,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 824
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1302
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 627
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 34,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 652
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 884
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1250
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 35,
+      "reference_incident_type": "Health Data Collection Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 1488
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 785
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 1107
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 36,
+      "reference_incident_type": "Proxy Connection Failure",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 118
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 1021
+        },
+        {
+          "incident_type": "Proxy Connection Failure",
+          "severity": "MEDIUM",
+          "train_index": 1428
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 37,
+      "reference_incident_type": "Multiple Error Events",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 875
+        },
+        {
+          "incident_type": "Authentication Failure",
+          "severity": "MEDIUM",
+          "train_index": 1280
+        },
+        {
+          "incident_type": "Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1357
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 38,
+      "reference_incident_type": "macOS System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 792
+        },
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 582
+        },
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 1505
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 39,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 671
+        },
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 419
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 128
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 40,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 676
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 931
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 923
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 41,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1091
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1485
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1053
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 42,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 158
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 219
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 394
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 43,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 319
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1532
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 516
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 44,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 322
+        },
+        {
+          "incident_type": "MapReduce Task Execution",
+          "severity": "INFO",
+          "train_index": 1496
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1197
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 45,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1024
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 138
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1110
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 46,
+      "reference_incident_type": "Multiple Error Events",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 1321
+        },
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 1504
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 1335
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 47,
+      "reference_incident_type": "Proxy Connection Failure",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Proxy Connection Failure",
+          "severity": "MEDIUM",
+          "train_index": 218
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 1225
+        },
+        {
+          "incident_type": "Proxy Connection Failure",
+          "severity": "MEDIUM",
+          "train_index": 808
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 48,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 700
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1459
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 64
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 49,
+      "reference_incident_type": "Message Queue Backlog",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Message Queue Backlog",
+          "severity": "MEDIUM",
+          "train_index": 979
+        },
+        {
+          "incident_type": "CPU Saturation",
+          "severity": "MEDIUM",
+          "train_index": 1212
+        },
+        {
+          "incident_type": "CPU Saturation",
+          "severity": "MEDIUM",
+          "train_index": 1172
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 50,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 928
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1005
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1338
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 51,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 661
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 517
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 93
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 52,
+      "reference_incident_type": "macOS System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 689
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 1264
+        },
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 1215
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 53,
+      "reference_incident_type": "ZooKeeper Quorum Connection Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 559
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 278
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 1392
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 54,
+      "reference_incident_type": "Hadoop Cluster Health Warning",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 748
+        },
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 296
+        },
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 1502
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 55,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1299
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 703
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 169
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 56,
+      "reference_incident_type": "HDFS Block Transfer Operation",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 727
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 1081
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 589
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 57,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 623
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 591
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 58,
+      "reference_incident_type": "HDFS Block Replication Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "HDFS Block Replication Failure",
+          "severity": "HIGH",
+          "train_index": 1165
+        },
+        {
+          "incident_type": "HDFS Block Replication Failure",
+          "severity": "HIGH",
+          "train_index": 214
+        },
+        {
+          "incident_type": "HDFS Block Replication Failure",
+          "severity": "HIGH",
+          "train_index": 391
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 59,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Mail Server Configuration Error",
+          "severity": "MEDIUM",
+          "train_index": 132
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 1136
+        },
+        {
+          "incident_type": "Mail Server Configuration Error",
+          "severity": "MEDIUM",
+          "train_index": 553
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 60,
+      "reference_incident_type": "Power Management Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Power Management Activity",
+          "severity": "INFO",
+          "train_index": 312
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 814
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 705
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 61,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 470
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 821
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1000
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 62,
+      "reference_incident_type": "Windows System Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1311
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 337
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 191
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 63,
+      "reference_incident_type": "JVM Heap Exhaustion",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "JVM Heap Exhaustion",
+          "severity": "HIGH",
+          "train_index": 721
+        },
+        {
+          "incident_type": "Out of Memory (OOM) Kill",
+          "severity": "CRITICAL",
+          "train_index": 7
+        },
+        {
+          "incident_type": "Message Queue Backlog",
+          "severity": "MEDIUM",
+          "train_index": 979
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 64,
+      "reference_incident_type": "Repeated Authentication Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Authentication Failure",
+          "severity": "MEDIUM",
+          "train_index": 1153
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 882
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 409
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 65,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 805
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1235
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 824
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 66,
+      "reference_incident_type": "macOS System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 625
+        },
+        {
+          "incident_type": "macOS Kernel Error",
+          "severity": "CRITICAL",
+          "train_index": 612
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 1046
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 0.0
+    },
+    {
+      "index": 67,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 782
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 901
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 909
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 68,
+      "reference_incident_type": "Proxy Traffic Routing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 1393
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 188
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 298
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 69,
+      "reference_incident_type": "OpenStack Compute Service Error",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack Compute Service Error",
+          "severity": "HIGH",
+          "train_index": 944
+        },
+        {
+          "incident_type": "OpenStack Compute Service Error",
+          "severity": "HIGH",
+          "train_index": 387
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1231
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 70,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 836
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1038
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 624
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 71,
+      "reference_incident_type": "macOS System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 860
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 1343
+        },
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 689
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 72,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 817
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 302
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 411
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 73,
+      "reference_incident_type": "Health Data Collection Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 1145
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 90
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 1093
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 74,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1058
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 862
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 221
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 75,
+      "reference_incident_type": "Multiple Error Events",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1019
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 157
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 921
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 0.0
+    },
+    {
+      "index": 76,
+      "reference_incident_type": "Proxy Connection Failure",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Proxy Connection Failure",
+          "severity": "MEDIUM",
+          "train_index": 571
+        },
+        {
+          "incident_type": "Proxy Connection Failure",
+          "severity": "MEDIUM",
+          "train_index": 368
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 1480
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 77,
+      "reference_incident_type": "Proxy Traffic Routing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 295
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 53
+        },
+        {
+          "incident_type": "Proxy Connection Failure",
+          "severity": "MEDIUM",
+          "train_index": 1192
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 78,
+      "reference_incident_type": "Windows Service Error",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 191
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 337
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1371
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 0.0
+    },
+    {
+      "index": 79,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "MapReduce Task Execution",
+          "severity": "INFO",
+          "train_index": 1496
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 322
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 94
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 80,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 993
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1345
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 230
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 81,
+      "reference_incident_type": "Windows System Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1020
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 483
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 774
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 82,
+      "reference_incident_type": "Hadoop Cluster Health Warning",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 322
+        },
+        {
+          "incident_type": "MapReduce Task Execution",
+          "severity": "INFO",
+          "train_index": 1496
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1197
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 0.0
+    },
+    {
+      "index": 83,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1258
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 201
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1439
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 84,
+      "reference_incident_type": "Successful Deployment",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Successful Deployment",
+          "severity": "INFO",
+          "train_index": 898
+        },
+        {
+          "incident_type": "Service Health Check Failure",
+          "severity": "CRITICAL",
+          "train_index": 532
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 59
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 85,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1287
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1122
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1071
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 86,
+      "reference_incident_type": "ZooKeeper Quorum Connection Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 1507
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 585
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 991
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 87,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1123
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 229
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 8
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 88,
+      "reference_incident_type": "Correctable Memory Error",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 1481
+        },
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 562
+        },
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 505
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 89,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1538
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1277
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 990
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 90,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 743
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 1126
+        },
+        {
+          "incident_type": "Mail Server Configuration Error",
+          "severity": "MEDIUM",
+          "train_index": 132
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 91,
+      "reference_incident_type": "HPC Compute Node Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 445
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 925
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1299
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 0.0
+    },
+    {
+      "index": 92,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 576
+        },
+        {
+          "incident_type": "MapReduce Task Execution",
+          "severity": "INFO",
+          "train_index": 1202
+        },
+        {
+          "incident_type": "MapReduce Task Execution",
+          "severity": "INFO",
+          "train_index": 975
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 93,
+      "reference_incident_type": "Correctable Memory Error",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 670
+        },
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 1312
+        },
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 424
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 94,
+      "reference_incident_type": "Windows System Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 47
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 947
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 177
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 95,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 836
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 624
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1155
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 96,
+      "reference_incident_type": "TLS Certificate Expiry",
+      "reference_severity": "CRITICAL",
+      "retrieved": [
+        {
+          "incident_type": "TLS Certificate Expiry",
+          "severity": "CRITICAL",
+          "train_index": 259
+        },
+        {
+          "incident_type": "Upcoming Certificate Expiry",
+          "severity": "LOW",
+          "train_index": 410
+        },
+        {
+          "incident_type": "Upcoming Certificate Expiry",
+          "severity": "LOW",
+          "train_index": 1025
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 97,
+      "reference_incident_type": "Service Error Event",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 1166
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 432
+        },
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 887
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 98,
+      "reference_incident_type": "Service Error Event",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 61
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 1082
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 171
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 99,
+      "reference_incident_type": "ZooKeeper Quorum Connection Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 262
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 630
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 466
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 100,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 1080
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 333
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 463
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 101,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1049
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 941
+        },
+        {
+          "incident_type": "Application Not Responding",
+          "severity": "HIGH",
+          "train_index": 1078
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 102,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 925
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 445
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1299
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 103,
+      "reference_incident_type": "OpenStack Compute Service Error",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack Compute Service Error",
+          "severity": "HIGH",
+          "train_index": 1001
+        },
+        {
+          "incident_type": "OpenStack Compute Service Error",
+          "severity": "HIGH",
+          "train_index": 239
+        },
+        {
+          "incident_type": "OpenStack Compute Service Error",
+          "severity": "HIGH",
+          "train_index": 638
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 104,
+      "reference_incident_type": "Critical System Failure",
+      "reference_severity": "CRITICAL",
+      "retrieved": [
+        {
+          "incident_type": "Critical System Failure",
+          "severity": "CRITICAL",
+          "train_index": 1142
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1426
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 931
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 105,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1377
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1368
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 958
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 106,
+      "reference_incident_type": "Critical System Failure",
+      "reference_severity": "CRITICAL",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 714
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 364
+        },
+        {
+          "incident_type": "Critical System Failure",
+          "severity": "CRITICAL",
+          "train_index": 420
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 107,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 517
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 93
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 661
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 108,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1182
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 78
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1435
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 109,
+      "reference_incident_type": "macOS System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 792
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 795
+        },
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 294
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 110,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 470
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1209
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 71
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 111,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 661
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 93
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 517
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 112,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 728
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1121
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1065
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 113,
+      "reference_incident_type": "Application Core Dump",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Application Core Dump",
+          "severity": "MEDIUM",
+          "train_index": 376
+        },
+        {
+          "incident_type": "Hardware Memory Fault",
+          "severity": "CRITICAL",
+          "train_index": 865
+        },
+        {
+          "incident_type": "Application Core Dump",
+          "severity": "MEDIUM",
+          "train_index": 1158
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 114,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1034
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 330
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 592
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 115,
+      "reference_incident_type": "HDFS Block Replication Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "HDFS Block Replication Failure",
+          "severity": "HIGH",
+          "train_index": 1165
+        },
+        {
+          "incident_type": "HDFS Block Replication Failure",
+          "severity": "HIGH",
+          "train_index": 391
+        },
+        {
+          "incident_type": "HDFS Block Replication Failure",
+          "severity": "HIGH",
+          "train_index": 450
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 116,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 111
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 88
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1033
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 117,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1213
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1029
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1354
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 118,
+      "reference_incident_type": "macOS System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 844
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 680
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 640
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 119,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 256
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 600
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 649
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 120,
+      "reference_incident_type": "Correctable Memory Error",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "Application Core Dump",
+          "severity": "MEDIUM",
+          "train_index": 1177
+        },
+        {
+          "incident_type": "Application Core Dump",
+          "severity": "MEDIUM",
+          "train_index": 50
+        },
+        {
+          "incident_type": "Application Core Dump",
+          "severity": "MEDIUM",
+          "train_index": 1457
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 0.0
+    },
+    {
+      "index": 121,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1114
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 716
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 377
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 122,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1531
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 377
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 716
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 123,
+      "reference_incident_type": "Windows System Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1154
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 510
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 89
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 124,
+      "reference_incident_type": "Health Data Collection Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 785
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 1372
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 447
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 125,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 551
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 395
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1455
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 126,
+      "reference_incident_type": "Windows System Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 645
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1054
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1295
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 127,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 470
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1209
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 138
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 128,
+      "reference_incident_type": "Windows System Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1411
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 404
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1104
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 129,
+      "reference_incident_type": "Repeated Authentication Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 401
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 546
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 190
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 130,
+      "reference_incident_type": "Hadoop Cluster Health Warning",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 686
+        },
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 864
+        },
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 608
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 131,
+      "reference_incident_type": "Disk Space Warning",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Disk Space Warning",
+          "severity": "MEDIUM",
+          "train_index": 467
+        },
+        {
+          "incident_type": "Disk Space Exhaustion",
+          "severity": "CRITICAL",
+          "train_index": 531
+        },
+        {
+          "incident_type": "Disk Space Exhaustion",
+          "severity": "CRITICAL",
+          "train_index": 124
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 132,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 799
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 665
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 578
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 133,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 164
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 246
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 217
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 134,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1395
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1549
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1439
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 135,
+      "reference_incident_type": "ZooKeeper Quorum Connection Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 991
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 369
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 545
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 136,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 651
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 71
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 231
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 137,
+      "reference_incident_type": "Health Data Collection Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 316
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 504
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 752
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 138,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1408
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1116
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 839
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 139,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 533
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 172
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 26
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 140,
+      "reference_incident_type": "Multiple Error Events",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 925
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 445
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1299
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 0.0
+    },
+    {
+      "index": 141,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1180
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1114
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 716
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 142,
+      "reference_incident_type": "Successful Authentication",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Successful Authentication",
+          "severity": "INFO",
+          "train_index": 701
+        },
+        {
+          "incident_type": "Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1357
+        },
+        {
+          "incident_type": "Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1493
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 143,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 116
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 762
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 660
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 144,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1094
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 210
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1259
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 145,
+      "reference_incident_type": "Proxy Traffic Routing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 384
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 216
+        },
+        {
+          "incident_type": "Proxy Connection Failure",
+          "severity": "MEDIUM",
+          "train_index": 1428
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 146,
+      "reference_incident_type": "ZooKeeper Quorum Connection Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 140
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 991
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 485
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 147,
+      "reference_incident_type": "Hardware Memory Fault",
+      "reference_severity": "CRITICAL",
+      "retrieved": [
+        {
+          "incident_type": "Hardware Memory Fault",
+          "severity": "CRITICAL",
+          "train_index": 1482
+        },
+        {
+          "incident_type": "Hardware Memory Fault",
+          "severity": "CRITICAL",
+          "train_index": 933
+        },
+        {
+          "incident_type": "Hardware Memory Fault",
+          "severity": "CRITICAL",
+          "train_index": 275
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 148,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 656
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 303
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1085
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 149,
+      "reference_incident_type": "Hadoop Cluster Health Warning",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 264
+        },
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 127
+        },
+        {
+          "incident_type": "Hadoop Cluster Health Warning",
+          "severity": "MEDIUM",
+          "train_index": 883
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 150,
+      "reference_incident_type": "Multiple Error Events",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 367
+        },
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 881
+        },
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 136
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 151,
+      "reference_incident_type": "Application Server Connector Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 481
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 1211
+        },
+        {
+          "incident_type": "Application Server Connector Failure",
+          "severity": "HIGH",
+          "train_index": 449
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 152,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1232
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1254
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 896
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 153,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1024
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 138
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 222
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 154,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 108
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1478
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1293
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 155,
+      "reference_incident_type": "ZooKeeper Quorum Connection Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 1336
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 262
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 630
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 156,
+      "reference_incident_type": "Correctable Memory Error",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 1228
+        },
+        {
+          "incident_type": "Application Core Dump",
+          "severity": "MEDIUM",
+          "train_index": 1404
+        },
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 1451
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 157,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 928
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1338
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 886
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 158,
+      "reference_incident_type": "HDFS Block Transfer Operation",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 831
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 634
+        },
+        {
+          "incident_type": "HDFS Block Transfer Operation",
+          "severity": "INFO",
+          "train_index": 1483
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 159,
+      "reference_incident_type": "OpenStack Compute Service Error",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1279
+        },
+        {
+          "incident_type": "OpenStack Compute Service Error",
+          "severity": "HIGH",
+          "train_index": 130
+        },
+        {
+          "incident_type": "OpenStack Compute Service Error",
+          "severity": "HIGH",
+          "train_index": 638
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 160,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Mail Server Configuration Error",
+          "severity": "MEDIUM",
+          "train_index": 132
+        },
+        {
+          "incident_type": "Mail Server Configuration Error",
+          "severity": "MEDIUM",
+          "train_index": 553
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 1136
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 161,
+      "reference_incident_type": "ZooKeeper Quorum Communication",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "ZooKeeper Quorum Communication",
+          "severity": "INFO",
+          "train_index": 1095
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Communication",
+          "severity": "INFO",
+          "train_index": 1389
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Communication",
+          "severity": "INFO",
+          "train_index": 224
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 162,
+      "reference_incident_type": "Correctable Memory Error",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 54
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 3
+        },
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 690
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 163,
+      "reference_incident_type": "Repeated Authentication Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 523
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 601
+        },
+        {
+          "incident_type": "Repeated Authentication Failure",
+          "severity": "HIGH",
+          "train_index": 60
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 164,
+      "reference_incident_type": "macOS System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 257
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 625
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 680
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 165,
+      "reference_incident_type": "System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 657
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 693
+        },
+        {
+          "incident_type": "System Warning",
+          "severity": "LOW",
+          "train_index": 1489
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 166,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1043
+        },
+        {
+          "incident_type": "MapReduce Task Execution",
+          "severity": "INFO",
+          "train_index": 975
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 713
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 167,
+      "reference_incident_type": "NTP Time Synchronization",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 1126
+        },
+        {
+          "incident_type": "NTP Time Synchronization",
+          "severity": "INFO",
+          "train_index": 743
+        },
+        {
+          "incident_type": "Mail Server Configuration Error",
+          "severity": "MEDIUM",
+          "train_index": 132
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 168,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 122
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 242
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1124
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 169,
+      "reference_incident_type": "ZooKeeper Worker Thread Interruption",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "ZooKeeper Worker Thread Interruption",
+          "severity": "MEDIUM",
+          "train_index": 804
+        },
+        {
+          "incident_type": "ZooKeeper Worker Thread Interruption",
+          "severity": "MEDIUM",
+          "train_index": 234
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 14
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 170,
+      "reference_incident_type": "macOS System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 527
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 802
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 1490
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 171,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 453
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 213
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1354
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 172,
+      "reference_incident_type": "Proxy Traffic Routing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 1208
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 796
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 344
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 173,
+      "reference_incident_type": "ZooKeeper Quorum Connection Failure",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 654
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 1437
+        },
+        {
+          "incident_type": "ZooKeeper Quorum Connection Failure",
+          "severity": "HIGH",
+          "train_index": 1535
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 174,
+      "reference_incident_type": "Health Data Collection Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 178
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 32
+        },
+        {
+          "incident_type": "Health Data Collection Event",
+          "severity": "INFO",
+          "train_index": 1107
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 175,
+      "reference_incident_type": "Service Error Event",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 972
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 254
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 204
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 176,
+      "reference_incident_type": "OpenStack API Request Processing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1531
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 377
+        },
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1296
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 177,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 260
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1514
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 809
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 178,
+      "reference_incident_type": "Correctable Memory Error",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 1226
+        },
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 1228
+        },
+        {
+          "incident_type": "Hardware Memory Fault",
+          "severity": "CRITICAL",
+          "train_index": 275
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 179,
+      "reference_incident_type": "Service Error Event",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 972
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 254
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 46
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 180,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 994
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 402
+        },
+        {
+          "incident_type": "Spark Data Caching Event",
+          "severity": "INFO",
+          "train_index": 1542
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 181,
+      "reference_incident_type": "Correctable Memory Error",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "Multiple Error Events",
+          "severity": "HIGH",
+          "train_index": 1347
+        },
+        {
+          "incident_type": "Critical System Failure",
+          "severity": "CRITICAL",
+          "train_index": 904
+        },
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 670
+        }
+      ],
+      "precision_at_3": 0.3333333333333333,
+      "severity_precision_at_3": 0.3333333333333333
+    },
+    {
+      "index": 182,
+      "reference_incident_type": "SSH Brute Force Attack",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 162
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1526
+        },
+        {
+          "incident_type": "SSH Brute Force Attack",
+          "severity": "HIGH",
+          "train_index": 1051
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 183,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 357
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 730
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 169
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 184,
+      "reference_incident_type": "Service Error Event",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 171
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 61
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 453
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 185,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 453
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1354
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1213
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 186,
+      "reference_incident_type": "Proxy Traffic Routing",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Proxy Connection Failure",
+          "severity": "MEDIUM",
+          "train_index": 1418
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 1066
+        },
+        {
+          "incident_type": "Proxy Traffic Routing",
+          "severity": "INFO",
+          "train_index": 953
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 187,
+      "reference_incident_type": "Windows System Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 947
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 978
+        },
+        {
+          "incident_type": "Windows System Event",
+          "severity": "INFO",
+          "train_index": 1097
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 188,
+      "reference_incident_type": "Service Error Event",
+      "reference_severity": "MEDIUM",
+      "retrieved": [
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 433
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 171
+        },
+        {
+          "incident_type": "Service Error Event",
+          "severity": "MEDIUM",
+          "train_index": 61
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 189,
+      "reference_incident_type": "macOS System Warning",
+      "reference_severity": "LOW",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 1255
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 458
+        },
+        {
+          "incident_type": "macOS Kernel Error",
+          "severity": "CRITICAL",
+          "train_index": 195
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 190,
+      "reference_incident_type": "HPC Job Scheduling Event",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 299
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 807
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 348
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 191,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 508
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1361
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 954
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 192,
+      "reference_incident_type": "macOS System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 689
+        },
+        {
+          "incident_type": "macOS System Activity",
+          "severity": "INFO",
+          "train_index": 1215
+        },
+        {
+          "incident_type": "macOS System Warning",
+          "severity": "LOW",
+          "train_index": 1264
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 193,
+      "reference_incident_type": "Multiple Error Events",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "Correctable Memory Error",
+          "severity": "LOW",
+          "train_index": 1228
+        },
+        {
+          "incident_type": "Application Core Dump",
+          "severity": "MEDIUM",
+          "train_index": 1404
+        },
+        {
+          "incident_type": "Critical System Failure",
+          "severity": "CRITICAL",
+          "train_index": 11
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 0.0
+    },
+    {
+      "index": 194,
+      "reference_incident_type": "OpenStack Compute Service Error",
+      "reference_severity": "HIGH",
+      "retrieved": [
+        {
+          "incident_type": "OpenStack API Request Processing",
+          "severity": "INFO",
+          "train_index": 1279
+        },
+        {
+          "incident_type": "OpenStack Compute Service Error",
+          "severity": "HIGH",
+          "train_index": 130
+        },
+        {
+          "incident_type": "OpenStack Compute Service Error",
+          "severity": "HIGH",
+          "train_index": 638
+        }
+      ],
+      "precision_at_3": 0.6666666666666666,
+      "severity_precision_at_3": 0.6666666666666666
+    },
+    {
+      "index": 195,
+      "reference_incident_type": "Spark Task Execution",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1169
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 1034
+        },
+        {
+          "incident_type": "Spark Task Execution",
+          "severity": "INFO",
+          "train_index": 330
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 196,
+      "reference_incident_type": "Routine System Activity",
+      "reference_severity": "INFO",
+      "retrieved": [
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1420
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1074
+        },
+        {
+          "incident_type": "Routine System Activity",
+          "severity": "INFO",
+          "train_index": 1365
+        }
+      ],
+      "precision_at_3": 1.0,
+      "severity_precision_at_3": 1.0
+    },
+    {
+      "index": 197,
+      "reference_incident_type": "Hardware Machine Check Exception",
+      "reference_severity": "CRITICAL",
+      "retrieved": [
+        {
+          "incident_type": "Critical System Failure",
+          "severity": "CRITICAL",
+          "train_index": 982
+        },
+        {
+          "incident_type": "Hardware Memory Fault",
+          "severity": "CRITICAL",
+          "train_index": 275
+        },
+        {
+          "incident_type": "Hardware Memory Fault",
+          "severity": "CRITICAL",
+          "train_index": 1473
+        }
+      ],
+      "precision_at_3": 0.0,
+      "severity_precision_at_3": 1.0
+    }
+  ]
+}
