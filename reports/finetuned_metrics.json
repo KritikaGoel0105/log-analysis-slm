@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-07-18T08:48:45.906802+00:00",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "mode": "fine-tuned (QLoRA adapter: final-adapter)",
+  "num_examples": 198,
+  "parse_failures": 0,
+  "parse_failure_rate": 0.0,
+  "severity_accuracy": 0.7373737373737373,
+  "severity_f1_macro": {
+    "value": 0.6705245542352037,
+    "implementation": "sklearn"
+  },
+  "severity_classification_report": "              precision    recall  f1-score   support\n\n    CRITICAL       0.80      0.80      0.80         5\n        HIGH       0.70      0.74      0.72        47\n        INFO       0.96      0.80      0.87       100\n         LOW       0.48      0.77      0.59        26\n      MEDIUM       0.39      0.35      0.37        20\n\n    accuracy                           0.74       198\n   macro avg       0.67      0.69      0.67       198\nweighted avg       0.77      0.74      0.75       198\n",
+  "severity_confusion_matrix": {
+    "INFO": {
+      "INFO": 80,
+      "LOW": 15,
+      "HIGH": 4,
+      "MEDIUM": 1
+    },
+    "HIGH": {
+      "HIGH": 35,
+      "INFO": 2,
+      "MEDIUM": 9,
+      "LOW": 1
+    },
+    "LOW": {
+      "LOW": 20,
+      "HIGH": 4,
+      "MEDIUM": 1,
+      "CRITICAL": 1
+    },
+    "MEDIUM": {
+      "MEDIUM": 7,
+      "HIGH": 6,
+      "LOW": 6,
+      "INFO": 1
+    },
+    "CRITICAL": {
+      "HIGH": 1,
+      "CRITICAL": 4
+    }
+  },
+  "incident_type_f1_macro": {
+    "value": 0.2154986270627486,
+    "implementation": "sklearn"
+  },
+  "rouge_l": {
+    "mean": 0.5937138512777022,
+    "implementation": "rouge_score"
+  },
+  "false_positive_rate": {
+    "rate": 0.0873015873015873,
+    "false_positives": 11,
+    "non_incident_total": 126
+  },
+  "latency": {
+    "mean": 74.53477777777782,
+    "p50": 63.789,
+    "p95": 191.897,
+    "max": 240.223
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "targets": {
+    "severity_accuracy": {
+      "target": 0.85,
+      "direction": ">"
+    },
+    "incident_type_f1_macro": {
+      "target": 0.8,
+      "direction": ">"
+    },
+    "rouge_l_mean": {
+      "target": 0.55,
+      "direction": ">"
+    },
+    "false_positive_rate": {
+      "target": 0.1,
+      "direction": "<"
+    }
+  }
+}
