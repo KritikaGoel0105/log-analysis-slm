@@ -96,3 +96,6 @@ xxhash==3.8.0
 yarl==1.24.2
 bitsandbytes==0.49.2
 rouge-score==0.1.2
+absl-py==2.5.0
+defusedxml==0.7.1
+nltk==3.10.0
