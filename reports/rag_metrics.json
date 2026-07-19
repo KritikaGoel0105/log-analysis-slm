@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-07-19T17:44:27.307181+00:00",
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "mode": "RAG pipeline (fine-tuned + top-3 retrieved context)",
+  "num_examples": 198,
+  "parse_failures": 0,
+  "parse_failure_rate": 0.0,
+  "severity_accuracy": 0.8080808080808081,
+  "severity_f1_macro": {
+    "value": 0.811461743875537,
+    "implementation": "sklearn"
+  },
+  "severity_classification_report": "              precision    recall  f1-score   support\n\n    CRITICAL       1.00      1.00      1.00         5\n        HIGH       0.73      0.98      0.84        47\n        INFO       1.00      0.74      0.85       100\n         LOW       0.68      0.73      0.70        26\n      MEDIUM       0.57      0.80      0.67        20\n\n    accuracy                           0.81       198\n   macro avg       0.80      0.85      0.81       198\nweighted avg       0.85      0.81      0.81       198\n",
+  "severity_confusion_matrix": {
+    "INFO": {
+      "INFO": 74,
+      "HIGH": 10,
+      "MEDIUM": 9,
+      "LOW": 7
+    },
+    "HIGH": {
+      "HIGH": 46,
+      "LOW": 1
+    },
+    "LOW": {
+      "LOW": 19,
+      "HIGH": 4,
+      "MEDIUM": 3
+    },
+    "MEDIUM": {
+      "MEDIUM": 16,
+      "HIGH": 3,
+      "LOW": 1
+    },
+    "CRITICAL": {
+      "CRITICAL": 5
+    }
+  },
+  "incident_type_f1_macro": {
+    "value": 0.24047971082947237,
+    "implementation": "sklearn"
+  },
+  "rouge_l": {
+    "mean": 0.4637507999863785,
+    "implementation": "rouge_score"
+  },
+  "false_positive_rate": {
+    "rate": 0.20634920634920634,
+    "false_positives": 26,
+    "non_incident_total": 126
+  },
+  "latency": {
+    "mean": 119.99877777777782,
+    "p50": 110.078,
+    "p95": 276.318,
+    "max": 471.926
+  },
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "targets": {
+    "severity_accuracy": {
+      "target": 0.85,
+      "direction": ">"
+    },
+    "incident_type_f1_macro": {
+      "target": 0.8,
+      "direction": ">"
+    },
+    "rouge_l_mean": {
+      "target": 0.55,
+      "direction": ">"
+    },
+    "false_positive_rate": {
+      "target": 0.1,
+      "direction": "<"
+    }
+  },
+  "retrieval": {
+    "top_k": 3,
+    "index_file": "data\\faiss.index",
+    "corpus": "train.jsonl only (no val/test leakage)"
+  }
+}
