@@ -16,7 +16,7 @@ All inference and scoring performed **fully offline** (HF_HUB_OFFLINE=1, local m
 | Incident Type F1 (macro) | 0.001 | > 0.80 | FAIL |
 | ROUGE-L (summaries) | 0.121 | > 0.55 | FAIL |
 | False Positive Rate | 33.3% | < 10% | FAIL |
-| Root Cause Accuracy | *human evaluation — see example outputs below and baseline_predictions.jsonl* | > 75% | MANUAL |
+| Root Cause Accuracy | 58.6% (116/198 — per-example judgments in Root_Cause_Manual_Evaluation.xlsx) | > 75% | FAIL |
 | API Response Time (p95) | *measured in Week 9 (/analyze endpoint); raw model p95 = 216.2s/example* | < 5 s | DEFERRED |
 | RAG Retrieval Precision@3 | *measured in Week 7* | > 70% | DEFERRED |
 

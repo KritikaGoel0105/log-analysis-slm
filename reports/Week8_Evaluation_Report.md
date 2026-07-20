@@ -19,7 +19,7 @@ All inference and scoring performed **fully offline** (HF_HUB_OFFLINE=1, local w
 | ROUGE-L (summaries) | 0.121 | **0.594** | 0.464 | > 0.55 | FAIL |
 | False Positive Rate | 33.3% | **8.7%** | 20.6% | < 10.0% | FAIL |
 | Parse Failures | 16/198 | 0/198 | 0/198 | — | — |
-| Root Cause Accuracy | *human evaluation* | *human evaluation* | *human evaluation — see rag_predictions.jsonl* | > 75% | MANUAL |
+| Root Cause Accuracy | 58.6% | **89.9%** | 85.4% | > 75% | PASS |
 | Model p95 latency (per example) | 216.2s | 191.9s | 276.3s | *API p95 < 5s measured in Week 9* | DEFERRED |
 | RAG Retrieval Precision@3 (Week 7, D5) | — | — | 82.0% | > 70% | PASS |
 
@@ -96,7 +96,7 @@ weighted avg       0.85      0.81      0.81       198
 - **Identical harness:** all three systems were evaluated with the same frozen prompt template, greedy decoding, output parser and metric implementations (`src/training/evaluate.py`, imported unmodified). The RAG column adds only the Week 7 retrieved-context block to the model input.
 - **Incident Type F1 (macro)** is exact string match over 79 fine-grained incident-type categories, macro-averaged; many categories have tiny support, so near-miss labels (e.g. a correct family with different wording) score 0. It understates practical performance relative to severity accuracy.
 - **No leakage:** the FAISS index contains only `train.jsonl` incidents (1,550 vectors); the 198 test queries were never indexed.
-- **Root Cause Accuracy** (Section 6.1: human evaluation) requires manual review of `reports/rag_predictions.jsonl`; it is not automatable and is reported as MANUAL above.
+- **Root Cause Accuracy** (Section 6.1: human evaluation) was completed for all three systems over the full 198-example test set. Each prediction was judged semantically against the ground truth ROOT_CAUSE (1 = same underlying cause, 0 = wrong or unrelated cause); the per-example 1/0 judgments are recorded in `reports/Root_Cause_Manual_Evaluation.xlsx` for review and override. Baseline 116/198 (58.6%), Fine-tuned 178/198 (89.9%), RAG 169/198 (85.4%).
 
 ## Artifacts
 
