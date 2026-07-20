@@ -1,0 +1,73 @@
+{
+  "info": {
+    "name": "Log Analysis API — Week 9 (D7)",
+    "description": "Document Section 5.6 endpoints: POST /analyze and GET /health. Server must be running offline: uvicorn src.api.api:app --host 127.0.0.1 --port 8000",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {"key": "base_url", "value": "http://127.0.0.1:8000"}
+  ],
+  "item": [
+    {
+      "name": "1. Health check",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/health",
+        "description": "Section 5.6: expects {\"status\":\"healthy\",\"model\":\"Qwen/Qwen2.5-3B-Instruct\",\"offline\":true}"
+      }
+    },
+    {
+      "name": "2. Analyze — default parameters",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/analyze",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"logs\": \"2026-07-18 09:14:02 kernel: EXT4-fs error (device sda1): ext4_find_entry:1455: inode #131077: comm smartd: reading directory lblock 0\\n2026-07-18 09:14:02 smartd[1024]: Device: /dev/sda [SAT], 8 Currently unreadable (pending) sectors\\n2026-07-18 09:14:05 kernel: blk_update_request: critical medium error, dev sda, sector 52428800\"\n}"
+        },
+        "description": "Full pipeline with defaults (top_k_context=3, max_tokens=512). Slow: ~1-2 min on GPU, several minutes on CPU."
+      }
+    },
+    {
+      "name": "3. Analyze — custom top_k_context and max_tokens",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/analyze",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"logs\": \"2026-07-18 10:00:01 systemd: Started Session 42 of user admin.\\n2026-07-18 10:00:03 sshd[2211]: Accepted publickey for admin from 10.0.0.5 port 51122\",\n  \"top_k_context\": 5,\n  \"max_tokens\": 256\n}"
+        }
+      }
+    },
+    {
+      "name": "4. Analyze — validation error (missing 'logs', expect 422)",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/analyze",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\n  \"top_k_context\": 3\n}"},
+        "description": "Request validation (Section 4 Week 9 focus): Pydantic rejects the request with HTTP 422."
+      }
+    },
+    {
+      "name": "5. Analyze — empty logs (expect 400)",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/analyze",
+        "header": [{"key": "Content-Type", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\n  \"logs\": \"   \\n  \\n\"\n}"},
+        "description": "Error handling (Section 4 Week 9 focus): empty request returns HTTP 400."
+      }
+    },
+    {
+      "name": "6. Endpoint documentation (OpenAPI, expect 200)",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/docs",
+        "description": "D7: 'all endpoints documented' — FastAPI auto-generated OpenAPI documentation, served offline."
+      }
+    }
+  ]
+}
