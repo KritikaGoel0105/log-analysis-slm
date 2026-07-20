@@ -1,0 +1,8 @@
+# Week 10 dashboard — offline configuration.
+# Telemetry disabled: no usage statistics are sent anywhere
+# (air-gapped operation, document Sections 2 and 10.1).
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true
