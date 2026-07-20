@@ -321,18 +321,39 @@ def main() -> None:
     results = st.session_state.get(result_key)
 
     if results is None:
-        if not st.button("🔍 Analyze", type="primary"):
-            return
+        # Interrupted-run recovery (orchestration only — no model
+        # behavior change): a user interaction during a long analysis
+        # makes Streamlit STOP the running script and rerun it. Each
+        # finished window is therefore persisted to session_state
+        # immediately (the list below lives in session_state, so every
+        # append is durable); a rerun resumes after the last completed
+        # window and re-renders stored results instead of recomputing
+        # them. Windows are never re-analyzed.
+        partial_key = result_key + "::partial"
+        partial = st.session_state.get(partial_key)
+        if partial is None:
+            if not st.button("🔍 Analyze", type="primary"):
+                return
+            partial = []
+            st.session_state[partial_key] = partial
+        elif len(partial) < len(windows):
+            st.info(f"Resuming analysis — {len(partial)} of "
+                    f"{len(windows)} window(s) already completed "
+                    "(reused, not recomputed).")
+        results = partial          # same list object as session_state
+        done = len(partial)        # windows completed before this run
         # Live analysis: progress bar + results appearing per window.
-        progress = st.progress(0.0)
+        progress = st.progress(done / len(windows))
         status = st.empty()
-        results = []
         for w_idx, window in enumerate(windows, 1):
-            status.markdown(f"⏳ Analyzing window **{w_idx} / "
-                            f"{len(windows)}** ...")
-            window_text = "\n".join(window)
-            parsed = analyze_window(pipeline, window_text)
-            results.append((window_text, parsed))
+            if w_idx <= done:
+                window_text, parsed = results[w_idx - 1]
+            else:
+                status.markdown(f"⏳ Analyzing window **{w_idx} / "
+                                f"{len(windows)}** ...")
+                window_text = "\n".join(window)
+                parsed = analyze_window(pipeline, window_text)
+                results.append((window_text, parsed))
             header = (f"Window {w_idx} of {len(windows)} — "
                       f"{SEVERITY_BADGE.get((parsed.get('severity') or 'UNPARSED').upper(), '⬜')} "
                       f"{(parsed.get('severity') or 'UNPARSED').upper()}")
@@ -344,6 +365,7 @@ def main() -> None:
         status.markdown(f"✅ Done — {len(windows)} window(s) "
                         "analyzed offline.")
         st.session_state[result_key] = results
+        del st.session_state[partial_key]
     else:
         # Rerun after completion: render stored results, zero compute.
         st.markdown(f"✅ {len(results)} window(s) analyzed offline "
