@@ -129,5 +129,7 @@ bash package_offline.sh        # -> dist/log-analysis-slm-offline.tar.gz + .sha2
   any Hugging Face import (api.py, dashboard.py, evaluation scripts).
 - All artifacts load from local paths; Streamlit telemetry disabled
   (`.streamlit/config.toml`); pip runs `--no-index` from local wheels.
-- Version control is **local Git only — no remote push** (document
-  Section 7: "Git (local only) — no remote push").
+- Version control uses Git, with the project repository maintained on GitHub.
+
+Project repository:
+https://github.com/KritikaGoel0105/log-analysis-slm
